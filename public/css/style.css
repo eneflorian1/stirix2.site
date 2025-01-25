@@ -59,12 +59,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
