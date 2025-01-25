@@ -10,23 +10,45 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="min-h-screen">
-  <div class="liquid-bg"></div>
+  <div class="fixed inset-0 animate-gradient opacity-20 z-0"></div>
   
-  <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70 shadow-sm">
-    <div class="container mx-auto px-6 py-4">
-      <h1 class="text-4xl font-bold news-title text-center">Site de Știri</h1>
-    </div>
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-black/50">
+    <nav class="container mx-auto px-6 py-4">
+      <h1 class="text-4xl font-bold title-gradient text-center">Site de Știri</h1>
+    </nav>
   </header>
 
-  <main class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-10 text-gray-800">Cele mai noi știri</h2>
-    <div id="news-container" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <article class="glass-card p-6">
+  <main class="container mx-auto px-4 py-12 relative z-10">
+    <h2 class="text-3xl font-bold mb-10 title-gradient">Cele mai noi știri</h2>
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <article class="news-card p-6">
         <h3 class="text-xl font-semibold mb-4">Incendiu Crevedia</h3>
-        <p class="text-gray-600 mb-4">Cele mai recente actualizări despre Incendiu Crevedia</p>
+        <p class="text-gray-400 mb-4">Cele mai recente actualizări despre Incendiu Crevedia</p>
         <div class="flex justify-between items-center">
           <span class="text-sm text-gray-500">25.01.2025</span>
-          <button class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700 transition-colors">
+          <button class="btn hover:bg-white/20">
+            Citește mai mult
+          </button>
+        </div>
+      </article>
+
+      <article class="news-card p-6">
+        <h3 class="text-xl font-semibold mb-4">Transnistria</h3>
+        <p class="text-gray-400 mb-4">Cele mai recente actualizări despre Transnistria</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm text-gray-500">25.01.2025</span>
+          <button class="btn hover:bg-white/20">
+            Citește mai mult
+          </button>
+        </div>
+      </article>
+
+      <article class="news-card p-6">
+        <h3 class="text-xl font-semibold mb-4">Dinamo București, "U" Cluj</h3>
+        <p class="text-gray-400 mb-4">Cele mai recente actualizări despre meci</p>
+        <div class="flex justify-between items-center">
+          <span class="text-sm text-gray-500">25.01.2025</span>
+          <button class="btn hover:bg-white/20">
             Citește mai mult
           </button>
         </div>
@@ -34,9 +56,9 @@
     </div>
   </main>
 
-  <footer class="mt-20 bg-gray-900/90 text-white backdrop-blur-lg">
+  <footer class="mt-20 backdrop-blur-xl bg-black/50 relative z-10">
     <div class="container mx-auto px-6 py-8 text-center">
-      <p class="text-gray-300">© 2025 - Site de Știri. Toate drepturile rezervate.</p>
+      <p class="text-gray-400">© 2025 - Site de Știri. Toate drepturile rezervate.</p>
     </div>
   </footer>
 
