@@ -1,0 +1,17 @@
+{
+  "name": "stirix2",
+  "version": "1.0.0",
+  "description": "News website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:css": "tailwindcss -i ./public/css/style.css -o ./public/css/output.css",
+    "watch:css": "tailwindcss -i ./public/css/style.css -o ./public/css/output.css --watch"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
